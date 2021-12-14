@@ -1,0 +1,227 @@
+2021-07-19 07:40:30.743870: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+Read data
+Data loaded
+----------------------------------------
+Create 9000 data points segments
+----------------------------------------
+Define model architecture
+2021-07-19 07:41:55.115526: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcuda.so.1
+2021-07-19 07:41:55.183392: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
+pciBusID: 0000:3b:00.0 name: Quadro RTX 5000 computeCapability: 7.5
+coreClock: 1.815GHz coreCount: 48 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 417.29GiB/s
+2021-07-19 07:41:55.183432: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2021-07-19 07:41:55.185849: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2021-07-19 07:41:55.187819: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcufft.so.10
+2021-07-19 07:41:55.188663: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcurand.so.10
+2021-07-19 07:41:55.190328: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusolver.so.10
+2021-07-19 07:41:55.191576: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusparse.so.10
+2021-07-19 07:41:55.195019: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2021-07-19 07:41:55.197029: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0
+2021-07-19 07:41:55.197296: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN)to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-07-19 07:41:55.216640: I tensorflow/core/platform/profile_utils/cpu_utils.cc:104] CPU Frequency: 2100000000 Hz
+2021-07-19 07:41:55.221721: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x558e968bf1c0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-07-19 07:41:55.221746: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-07-19 07:41:55.353150: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x558ef085f160 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-07-19 07:41:55.353209: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Quadro RTX 5000, Compute Capability 7.5
+2021-07-19 07:41:55.355961: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
+pciBusID: 0000:3b:00.0 name: Quadro RTX 5000 computeCapability: 7.5
+coreClock: 1.815GHz coreCount: 48 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 417.29GiB/s
+2021-07-19 07:41:55.356030: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2021-07-19 07:41:55.356076: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2021-07-19 07:41:55.356101: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcufft.so.10
+2021-07-19 07:41:55.356126: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcurand.so.10
+2021-07-19 07:41:55.356150: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusolver.so.10
+2021-07-19 07:41:55.356174: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusparse.so.10
+2021-07-19 07:41:55.356211: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2021-07-19 07:41:55.361946: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0
+2021-07-19 07:41:55.362018: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2021-07-19 07:41:55.766209: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1257] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-07-19 07:41:55.766246: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1263]      0 
+2021-07-19 07:41:55.766252: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1276] 0:   N 
+2021-07-19 07:41:55.768364: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1402] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14904 MB memory) -> physical GPU (device: 0, name: Quadro RTX 5000, pci bus id: 0000:3b:00.0, compute capability: 7.5)
+Model: "functional_1"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+input_1 (InputLayer)         [(None, 14336, 1)]        0         
+_________________________________________________________________
+Conv_1 (Conv1D)              (None, 14332, 32)         192       
+_________________________________________________________________
+batch_normalization (BatchNo (None, 14332, 32)         128       
+_________________________________________________________________
+Pooling_1 (MaxPooling1D)     (None, 7166, 32)          0         
+_________________________________________________________________
+Conv_2 (Conv1D)              (None, 7162, 32)          5152      
+_________________________________________________________________
+Pooling_2 (MaxPooling1D)     (None, 3581, 32)          0         
+_________________________________________________________________
+Conv_3 (Conv1D)              (None, 3577, 64)          10304     
+_________________________________________________________________
+Pooling_3 (MaxPooling1D)     (None, 1788, 64)          0         
+_________________________________________________________________
+Conv_4 (Conv1D)              (None, 1784, 64)          20544     
+_________________________________________________________________
+Pooling_4 (MaxPooling1D)     (None, 892, 64)           0         
+_________________________________________________________________
+Conv_5 (Conv1D)              (None, 888, 128)          41088     
+_________________________________________________________________
+Pooling_5 (MaxPooling1D)     (None, 444, 128)          0         
+_________________________________________________________________
+Conv_6 (Conv1D)              (None, 440, 128)          82048     
+_________________________________________________________________
+Pooling_6 (MaxPooling1D)     (None, 220, 128)          0         
+_________________________________________________________________
+dropout (Dropout)            (None, 220, 128)          0         
+_________________________________________________________________
+Conv_7 (Conv1D)              (None, 216, 256)          164096    
+_________________________________________________________________
+Pooling_7 (MaxPooling1D)     (None, 108, 256)          0         
+_________________________________________________________________
+Conv_8 (Conv1D)              (None, 104, 256)          327936    
+_________________________________________________________________
+Pooling_8 (MaxPooling1D)     (None, 52, 256)           0         
+_________________________________________________________________
+dropout_1 (Dropout)          (None, 52, 256)           0         
+_________________________________________________________________
+Conv_9 (Conv1D)              (None, 48, 512)           655872    
+_________________________________________________________________
+Pooling_9 (MaxPooling1D)     (None, 24, 512)           0         
+_________________________________________________________________
+dropout_2 (Dropout)          (None, 24, 512)           0         
+_________________________________________________________________
+Conv_10 (Conv1D)             (None, 20, 512)           1311232   
+_________________________________________________________________
+Flatten1 (Flatten)           (None, 10240)             0         
+_________________________________________________________________
+dense (Dense)                (None, 128)               1310848   
+_________________________________________________________________
+dropout_3 (Dropout)          (None, 128)               0         
+_________________________________________________________________
+dense_1 (Dense)              (None, 32)                4128      
+_________________________________________________________________
+dense_2 (Dense)              (None, 2)                 66        
+=================================================================
+Total params: 3,933,634
+Trainable params: 3,933,570
+Non-trainable params: 64
+_________________________________________________________________
+----------------------------------------
+Fit model on training data
+Epoch 1/50
+2021-07-19 07:41:58.635034: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2021-07-19 07:41:58.801561: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2021-07-19 07:41:59.946854: W tensorflow/stream_executor/gpu/asm_compiler.cc:81] Running ptxas --version returned 256
+2021-07-19 07:42:00.118270: W tensorflow/stream_executor/gpu/redzone_allocator.cc:314] Internal: ptxas exited with non-zero error code 256, output: 
+Relying on driver to perform ptx compilation. 
+Modify $PATH to customize ptxas location.
+This message will be only logged once.
+202/202 - 89s - loss: 0.6966 - accuracy: 0.5165 - val_loss: 0.6950 - val_accuracy: 0.4643
+Epoch 2/50
+202/202 - 10s - loss: 0.5226 - accuracy: 0.7258 - val_loss: 0.4465 - val_accuracy: 0.7884
+Epoch 3/50
+202/202 - 10s - loss: 0.1242 - accuracy: 0.9604 - val_loss: 0.1100 - val_accuracy: 0.9696
+Epoch 4/50
+202/202 - 10s - loss: 0.0839 - accuracy: 0.9751 - val_loss: 0.1273 - val_accuracy: 0.9714
+Epoch 5/50
+202/202 - 10s - loss: 0.0626 - accuracy: 0.9830 - val_loss: 0.0892 - val_accuracy: 0.9714
+Epoch 6/50
+202/202 - 10s - loss: 0.0503 - accuracy: 0.9860 - val_loss: 0.1039 - val_accuracy: 0.9795
+Epoch 7/50
+202/202 - 10s - loss: 0.0455 - accuracy: 0.9888 - val_loss: 0.0590 - val_accuracy: 0.9830
+Epoch 8/50
+202/202 - 10s - loss: 0.0540 - accuracy: 0.9830 - val_loss: 0.0703 - val_accuracy: 0.9705
+Epoch 9/50
+202/202 - 10s - loss: 0.0485 - accuracy: 0.9880 - val_loss: 0.0530 - val_accuracy: 0.9848
+Epoch 10/50
+202/202 - 10s - loss: 0.0441 - accuracy: 0.9874 - val_loss: 0.0680 - val_accuracy: 0.9830
+Epoch 11/50
+202/202 - 10s - loss: 0.0432 - accuracy: 0.9877 - val_loss: 0.0564 - val_accuracy: 0.9839
+Epoch 12/50
+202/202 - 10s - loss: 0.0359 - accuracy: 0.9906 - val_loss: 0.0545 - val_accuracy: 0.9848
+Epoch 13/50
+202/202 - 10s - loss: 0.0424 - accuracy: 0.9889 - val_loss: 0.0803 - val_accuracy: 0.9830
+Epoch 14/50
+202/202 - 10s - loss: 0.0398 - accuracy: 0.9884 - val_loss: 0.0655 - val_accuracy: 0.9848
+Epoch 15/50
+202/202 - 10s - loss: 0.0372 - accuracy: 0.9884 - val_loss: 0.0612 - val_accuracy: 0.9768
+Epoch 16/50
+202/202 - 10s - loss: 0.0323 - accuracy: 0.9926 - val_loss: 0.0672 - val_accuracy: 0.9759
+Epoch 17/50
+202/202 - 10s - loss: 0.0307 - accuracy: 0.9910 - val_loss: 0.2565 - val_accuracy: 0.9661
+Epoch 18/50
+202/202 - 10s - loss: 0.0384 - accuracy: 0.9916 - val_loss: 0.0495 - val_accuracy: 0.9875
+Epoch 19/50
+202/202 - 10s - loss: 0.0339 - accuracy: 0.9906 - val_loss: 0.0725 - val_accuracy: 0.9821
+Epoch 20/50
+202/202 - 10s - loss: 0.0338 - accuracy: 0.9910 - val_loss: 0.0850 - val_accuracy: 0.9830
+Epoch 21/50
+202/202 - 10s - loss: 0.0375 - accuracy: 0.9900 - val_loss: 0.0771 - val_accuracy: 0.9839
+Epoch 22/50
+202/202 - 10s - loss: 0.0351 - accuracy: 0.9913 - val_loss: 0.0772 - val_accuracy: 0.9839
+Epoch 23/50
+202/202 - 10s - loss: 0.0279 - accuracy: 0.9930 - val_loss: 0.0939 - val_accuracy: 0.9679
+Epoch 24/50
+202/202 - 10s - loss: 0.0324 - accuracy: 0.9915 - val_loss: 0.0635 - val_accuracy: 0.9812
+Epoch 25/50
+202/202 - 10s - loss: 0.0280 - accuracy: 0.9934 - val_loss: 0.0578 - val_accuracy: 0.9848
+Epoch 26/50
+202/202 - 10s - loss: 0.0266 - accuracy: 0.9929 - val_loss: 0.0530 - val_accuracy: 0.9848
+Epoch 27/50
+202/202 - 10s - loss: 0.0297 - accuracy: 0.9921 - val_loss: 0.0649 - val_accuracy: 0.9795
+Epoch 28/50
+202/202 - 10s - loss: 0.0324 - accuracy: 0.9922 - val_loss: 0.1154 - val_accuracy: 0.9830
+Epoch 29/50
+202/202 - 10s - loss: 0.0410 - accuracy: 0.9918 - val_loss: 0.1304 - val_accuracy: 0.9786
+Epoch 30/50
+202/202 - 10s - loss: 0.0296 - accuracy: 0.9922 - val_loss: 0.0572 - val_accuracy: 0.9875
+Epoch 31/50
+202/202 - 10s - loss: 0.0293 - accuracy: 0.9925 - val_loss: 0.1088 - val_accuracy: 0.9777
+Epoch 32/50
+202/202 - 10s - loss: 0.0264 - accuracy: 0.9917 - val_loss: 0.0485 - val_accuracy: 0.9839
+Epoch 33/50
+202/202 - 10s - loss: 0.0282 - accuracy: 0.9926 - val_loss: 0.0692 - val_accuracy: 0.9866
+Epoch 34/50
+202/202 - 10s - loss: 0.0245 - accuracy: 0.9928 - val_loss: 0.0679 - val_accuracy: 0.9795
+Epoch 35/50
+202/202 - 10s - loss: 0.0244 - accuracy: 0.9944 - val_loss: 0.0585 - val_accuracy: 0.9848
+Epoch 36/50
+202/202 - 10s - loss: 0.0182 - accuracy: 0.9947 - val_loss: 0.0495 - val_accuracy: 0.9839
+Epoch 37/50
+202/202 - 10s - loss: 0.0254 - accuracy: 0.9925 - val_loss: 0.0702 - val_accuracy: 0.9821
+Epoch 38/50
+202/202 - 10s - loss: 0.0276 - accuracy: 0.9927 - val_loss: 0.0631 - val_accuracy: 0.9804
+Epoch 39/50
+202/202 - 10s - loss: 0.0207 - accuracy: 0.9940 - val_loss: 0.0564 - val_accuracy: 0.9875
+Epoch 40/50
+202/202 - 10s - loss: 0.0173 - accuracy: 0.9956 - val_loss: 0.0494 - val_accuracy: 0.9866
+Epoch 41/50
+202/202 - 10s - loss: 0.0194 - accuracy: 0.9945 - val_loss: 0.0844 - val_accuracy: 0.9804
+Epoch 42/50
+202/202 - 10s - loss: 0.0290 - accuracy: 0.9921 - val_loss: 0.0578 - val_accuracy: 0.9821
+Epoch 43/50
+202/202 - 10s - loss: 0.0281 - accuracy: 0.9930 - val_loss: 0.0484 - val_accuracy: 0.9830
+Epoch 44/50
+202/202 - 10s - loss: 0.0271 - accuracy: 0.9930 - val_loss: 0.0593 - val_accuracy: 0.9839
+Epoch 45/50
+202/202 - 10s - loss: 0.0226 - accuracy: 0.9944 - val_loss: 0.0398 - val_accuracy: 0.9848
+Epoch 46/50
+202/202 - 10s - loss: 0.0190 - accuracy: 0.9949 - val_loss: 0.0568 - val_accuracy: 0.9875
+Epoch 47/50
+202/202 - 10s - loss: 0.0210 - accuracy: 0.9949 - val_loss: 0.0714 - val_accuracy: 0.9821
+Epoch 48/50
+202/202 - 10s - loss: 0.0268 - accuracy: 0.9929 - val_loss: 0.0570 - val_accuracy: 0.9830
+Epoch 49/50
+202/202 - 10s - loss: 0.0198 - accuracy: 0.9946 - val_loss: 0.0546 - val_accuracy: 0.9839
+Epoch 50/50
+202/202 - 10s - loss: 0.0271 - accuracy: 0.9930 - val_loss: 0.0494 - val_accuracy: 0.9866
+350/350 - 4s - loss: 0.0272 - accuracy: 0.9945
+WARNING:tensorflow:Callbacks method `on_test_batch_end` is slow compared to the batch time (batch time: 0.0036s vs `on_test_batch_end` time: 0.0078s). Check your callbacks.
+150/150 - 2s - loss: 0.0442 - accuracy: 0.9890
+---------------------------------------------------
+Training evaluation
+[0.02721719816327095, 0.9944642782211304]
+Test evaluation
+[0.04422461986541748, 0.9889583587646484]
+---------------------------------------------------
+Weights saved to chaur_2020.h5 file
