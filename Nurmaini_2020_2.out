@@ -1,0 +1,152 @@
+2021-12-08 23:22:37.182250: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2021-12-08 23:24:02.621920: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcuda.so.1
+2021-12-08 23:24:02.690336: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
+pciBusID: 0000:3b:00.0 name: Quadro RTX 5000 computeCapability: 7.5
+coreClock: 1.815GHz coreCount: 48 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 417.29GiB/s
+2021-12-08 23:24:02.690376: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2021-12-08 23:24:02.693393: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2021-12-08 23:24:02.696058: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcufft.so.10
+2021-12-08 23:24:02.697157: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcurand.so.10
+2021-12-08 23:24:02.699223: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusolver.so.10
+2021-12-08 23:24:02.701115: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusparse.so.10
+2021-12-08 23:24:02.706195: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2021-12-08 23:24:02.707957: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0
+2021-12-08 23:24:02.708284: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN)to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-12-08 23:24:02.721858: I tensorflow/core/platform/profile_utils/cpu_utils.cc:104] CPU Frequency: 2100000000 Hz
+2021-12-08 23:24:02.726792: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55891b51f110 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-12-08 23:24:02.726854: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-12-08 23:24:02.826788: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55891b6f0590 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-12-08 23:24:02.826849: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Quadro RTX 5000, Compute Capability 7.5
+2021-12-08 23:24:02.829002: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
+pciBusID: 0000:3b:00.0 name: Quadro RTX 5000 computeCapability: 7.5
+coreClock: 1.815GHz coreCount: 48 deviceMemorySize: 15.75GiB deviceMemoryBandwidth: 417.29GiB/s
+2021-12-08 23:24:02.829077: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2021-12-08 23:24:02.829125: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2021-12-08 23:24:02.829158: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcufft.so.10
+2021-12-08 23:24:02.829188: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcurand.so.10
+2021-12-08 23:24:02.829218: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusolver.so.10
+2021-12-08 23:24:02.829248: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusparse.so.10
+2021-12-08 23:24:02.829279: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2021-12-08 23:24:02.833269: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0
+2021-12-08 23:24:02.833359: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2021-12-08 23:24:03.217641: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1257] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-12-08 23:24:03.217682: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1263]      0 
+2021-12-08 23:24:03.217688: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1276] 0:   N 
+2021-12-08 23:24:03.219368: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1402] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14904 MB memory) -> physical GPU (device: 0, name: Quadro RTX 5000, pci bus id: 0000:3b:00.0, compute capability: 7.5)
+2021-12-08 23:24:06.116967: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2021-12-08 23:24:06.385501: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2021-12-08 23:24:07.659401: W tensorflow/stream_executor/gpu/asm_compiler.cc:81] Running ptxas --version returned 256
+2021-12-08 23:24:07.802604: W tensorflow/stream_executor/gpu/redzone_allocator.cc:314] Internal: ptxas exited with non-zero error code 256, output: 
+Relying on driver to perform ptx compilation. 
+Modify $PATH to customize ptxas location.
+This message will be only logged once.
+WARNING:tensorflow:Callbacks method `on_train_batch_end` is slow compared to the batch time (batch time: 0.0116s vs `on_train_batch_end` time: 0.1549s). Check your callbacks.
+WARNING:tensorflow:Callbacks method `on_test_batch_end` is slow compared to the batch time (batch time: 0.0031s vs `on_test_batch_end` time: 0.0431s). Check your callbacks.
+Read data
+Data loaded
+----------------------------------------
+----------------------------------------
+Define model architecture
+Model: "functional_1"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+input_1 (InputLayer)         [(None, 14336, 1)]        0         
+_________________________________________________________________
+Conv_1 (Conv1D)              (None, 14334, 64)         256       
+_________________________________________________________________
+Conv_2 (Conv1D)              (None, 14332, 64)         12352     
+_________________________________________________________________
+Pooling_1 (MaxPooling1D)     (None, 7166, 64)          0         
+_________________________________________________________________
+Conv_3 (Conv1D)              (None, 7164, 128)         24704     
+_________________________________________________________________
+Conv_4 (Conv1D)              (None, 7162, 128)         49280     
+_________________________________________________________________
+Pooling_2 (MaxPooling1D)     (None, 3581, 128)         0         
+_________________________________________________________________
+Conv_5 (Conv1D)              (None, 3579, 256)         98560     
+_________________________________________________________________
+Conv_6 (Conv1D)              (None, 3577, 256)         196864    
+_________________________________________________________________
+Conv_7 (Conv1D)              (None, 3575, 256)         196864    
+_________________________________________________________________
+Pooling_3 (MaxPooling1D)     (None, 1787, 256)         0         
+_________________________________________________________________
+Conv_8 (Conv1D)              (None, 1785, 512)         393728    
+_________________________________________________________________
+Conv_9 (Conv1D)              (None, 1783, 512)         786944    
+_________________________________________________________________
+Conv_10 (Conv1D)             (None, 1781, 512)         786944    
+_________________________________________________________________
+Pooling_4 (MaxPooling1D)     (None, 890, 512)          0         
+_________________________________________________________________
+Conv_11 (Conv1D)             (None, 888, 512)          786944    
+_________________________________________________________________
+Conv_12 (Conv1D)             (None, 886, 512)          786944    
+_________________________________________________________________
+Conv_13 (Conv1D)             (None, 884, 512)          786944    
+_________________________________________________________________
+Pooling_5 (MaxPooling1D)     (None, 442, 512)          0         
+_________________________________________________________________
+Flatten1 (Flatten)           (None, 226304)            0         
+_________________________________________________________________
+dense (Dense)                (None, 1000)              226305000 
+_________________________________________________________________
+dense_1 (Dense)              (None, 1000)              1001000   
+_________________________________________________________________
+dense_2 (Dense)              (None, 1)                 1001      
+=================================================================
+Total params: 232,214,329
+Trainable params: 232,214,329
+Non-trainable params: 0
+_________________________________________________________________
+----------------------------------------
+Fit model on training data
+Epoch 1/100
+630/630 - 99s - loss: 0.6935 - accuracy: 0.5059 - val_loss: 0.6938 - val_accuracy: 0.4643
+Epoch 2/100
+630/630 - 100s - loss: 0.6933 - accuracy: 0.4937 - val_loss: 0.6931 - val_accuracy: 0.5357
+Epoch 3/100
+630/630 - 100s - loss: 0.6932 - accuracy: 0.4962 - val_loss: 0.6930 - val_accuracy: 0.5357
+Epoch 4/100
+630/630 - 100s - loss: 0.6932 - accuracy: 0.5008 - val_loss: 0.6928 - val_accuracy: 0.5357
+Epoch 5/100
+630/630 - 100s - loss: 0.6932 - accuracy: 0.4937 - val_loss: 0.6928 - val_accuracy: 0.5357
+Epoch 6/100
+630/630 - 100s - loss: 0.6932 - accuracy: 0.5014 - val_loss: 0.6934 - val_accuracy: 0.4643
+Epoch 7/100
+630/630 - 100s - loss: 0.6932 - accuracy: 0.4899 - val_loss: 0.6930 - val_accuracy: 0.5357
+Epoch 8/100
+630/630 - 100s - loss: 0.6932 - accuracy: 0.5010 - val_loss: 0.6931 - val_accuracy: 0.5357
+Epoch 9/100
+630/630 - 100s - loss: 0.6932 - accuracy: 0.5012 - val_loss: 0.6932 - val_accuracy: 0.4643
+Epoch 10/100
+630/630 - 100s - loss: 0.6932 - accuracy: 0.5014 - val_loss: 0.6928 - val_accuracy: 0.5357
+Epoch 11/100
+630/630 - 100s - loss: 0.6932 - accuracy: 0.5012 - val_loss: 0.6930 - val_accuracy: 0.5357
+Epoch 12/100
+630/630 - 99s - loss: 0.6932 - accuracy: 0.4978 - val_loss: 0.6927 - val_accuracy: 0.5357
+Epoch 13/100
+630/630 - 100s - loss: 0.6932 - accuracy: 0.4996 - val_loss: 0.6929 - val_accuracy: 0.5357
+Epoch 14/100
+630/630 - 100s - loss: 0.6932 - accuracy: 0.4948 - val_loss: 0.6928 - val_accuracy: 0.5357
+Epoch 15/100
+630/630 - 99s - loss: 0.6932 - accuracy: 0.5012 - val_loss: 0.6930 - val_accuracy: 0.5357
+Epoch 16/100
+630/630 - 99s - loss: 0.6932 - accuracy: 0.4996 - val_loss: 0.6932 - val_accuracy: 0.4643
+Epoch 17/100
+630/630 - 100s - loss: 0.6932 - accuracy: 0.4907 - val_loss: 0.6930 - val_accuracy: 0.5357
+Epoch 18/100
+630/630 - 100s - loss: 0.6932 - accuracy: 0.4952 - val_loss: 0.6930 - val_accuracy: 0.5357
+Epoch 19/100
+630/630 - 100s - loss: 0.6932 - accuracy: 0.4954 - val_loss: 0.6927 - val_accuracy: 0.5357
+Epoch 20/100
+630/630 - 100s - loss: 0.6932 - accuracy: 0.4998 - val_loss: 0.6932 - val_accuracy: 0.4643
+Epoch 21/100
+630/630 - 100s - loss: 0.6932 - accuracy: 0.4897 - val_loss: 0.6929 - val_accuracy: 0.5357
+Epoch 22/100
+630/630 - 100s - loss: 0.6932 - accuracy: 0.4986 - val_loss: 0.6930 - val_accuracy: 0.5357
+Epoch 23/100
+630/630 - 100s - loss: 0.6932 - accuracy: 0.4942 - val_loss: 0.6930 - val_accuracy: 0.5357
